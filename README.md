@@ -61,30 +61,27 @@
 ## 🗂️ Project Structure
 
 ```
-TaskFlow/
-├── backend/           # Node.js/Express REST API
-│   ├── config/        # Database & cloudinary config
-│   ├── controllers/   # Route logic for auth, tasks, users, reports
-│   ├── middlewears/   # Auth & file upload middleware
-│   ├── models/        # Mongoose schemas (User, Task)
-│   ├── routes/        # API route definitions
-│   └── index.js       # App entry point
-│
-├── frontend/          # React + Vite client
-│   ├── public/        # Static assets
+task-manager-rbac/
+├── backend/
+│   ├── config/db.js
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   ├── .env
+│   ├── server.js
+│   └── package.json
+├── frontend/
 │   ├── src/
-│   │   ├── Admin/     # Admin dashboard pages
-│   │   ├── User/      # User dashboard pages
-│   │   ├── auth/      # Login/Signup
-│   │   ├── components/# Reusable UI components
-│   │   ├── context/   # React context providers
-│   │   ├── hooks/     # Custom React hooks
-│   │   ├── utils/     # API paths, axios config, helpers
-│   │   └── routes/    # Route protection
-│   ├── index.html     # App HTML template
-│   └── main.jsx       # App entry point
-└── README.md          # Project documentation
-```
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── context/
+│   │   ├── services/
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   └── package.json
+├── README.md
+└── .gitignore ```
 
 ---
 
